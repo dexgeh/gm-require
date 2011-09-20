@@ -64,4 +64,4 @@ GM_require.paths.push('https://github.com/dexgeh/gm-require/raw/master')
 var testModule = GM_require('test/module')
 testModule.testFunction([1,2,3])
 testModule = GM_require('test/module', true) //force reloading
-GM_require.removeFromCache('test') //for testing purpouses
+GM_require.removeFromCache('test/module') //for testing purpouses

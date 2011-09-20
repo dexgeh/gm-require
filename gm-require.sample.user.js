@@ -60,7 +60,7 @@ GM_require.removeFromCache = function(moduleName) {
 }
 
 // sample usage
-GM_require.paths.push('https://github.com/dexgeh/gm-require')
+GM_require.paths.push('https://github.com/dexgeh/gm-require/raw/master')
 var testModule = GM_require('test/module')
 testModule.testFunction([1,2,3])
 testModule = GM_require('test/module', true) //force reloading

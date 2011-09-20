@@ -74,3 +74,17 @@ testModule = GM_require('test/module', true) //force reloading
 testModule.f1()
 GM_require.removeFromCache('test/module') //for testing purpouses
 GM_require.removeFromCache('test/module2')
+
+
+eval(
+    GM_xmlhttpRequest({
+        synchronous:true,
+        method:'GET',
+        url:'http://jashkenas.github.com/coffee-script/extras/coffee-script.js'
+    }).responseText)
+GM_require.registerExtension('.coffee', function(src) {
+    return CoffeeScript.compile(src, {bare:true})
+})
+
+var cs_module = GM_require('test/cs-module')
+cs_module.csfun()

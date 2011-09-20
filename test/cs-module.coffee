@@ -1,0 +1,3 @@
+exports.myfun = () ->
+    alert 'myfun!'
+

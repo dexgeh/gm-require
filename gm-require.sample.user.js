@@ -47,7 +47,7 @@ GM_require.paths = []
 GM_require.modules = {}
 GM_require.extensions = {'.js':function(src) {return src}}
 GM_require.registerExtension = function(suffix, evalHandler) {
-    extensions[suffix] = evalHandler //evalHandler -> function(src) returns js eval-able src
+    GM_require.extensions[suffix] = evalHandler //evalHandler -> function(src) returns js eval-able src
 }
 GM_require.loadFromSource = function(moduleName, moduleSource) {
     var exports = {}

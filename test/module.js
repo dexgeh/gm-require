@@ -1,4 +1,4 @@
-exports.testFunction = function(args) {
-    alert(JSON.stringify(args))
+var m2 = require('module2')
+exports.f1 = function() {
+    m2.f2()
 }
-

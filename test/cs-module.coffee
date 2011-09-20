@@ -1,3 +1,3 @@
-exports.myfun = () ->
-    alert 'myfun!'
+exports.csfun = () ->
+    alert 'csfun!'
 

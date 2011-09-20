@@ -2,3 +2,6 @@ GM_require function definition for greasemonkey: common-js' require-like for gre
 
 See the sample userscript for the usage or try it here:
 https://github.com/dexgeh/gm-require/raw/master/gm-require.sample.user.js
+
+N.b.: the cached values can be found/delete manually in the about:config interface, under the greasemonkey.scriptvals.[namespace] hierarchy.
+

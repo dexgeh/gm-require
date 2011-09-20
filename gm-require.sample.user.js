@@ -75,7 +75,7 @@ testModule.f1()
 GM_require.removeFromCache('test/module') //for testing purpouses
 GM_require.removeFromCache('test/module2')
 
-
+// loading coffeescript modules - hackish
 eval(
     GM_xmlhttpRequest({
         synchronous:true,

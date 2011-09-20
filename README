@@ -1,4 +1,4 @@
 GM_require function definition for greasemonkey: common-js' require-like for greasemonkey.
 
-See the sample userscripts for the usage or try it here:
+See the sample userscript for the usage or try it here:
 https://github.com/dexgeh/gm-require/raw/master/gm-require.sample.user.js

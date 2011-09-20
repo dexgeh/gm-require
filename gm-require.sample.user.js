@@ -88,3 +88,4 @@ GM_require.registerExtension('.coffee', function(src) {
 
 var cs_module = GM_require('test/cs-module')
 cs_module.csfun()
+GM_require.removeFromCache('test/cs-module')
